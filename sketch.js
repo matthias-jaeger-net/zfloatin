@@ -1,4 +1,4 @@
-// defined in setup 
+// defined in setup
 var player = null;
 var gravity = null;
 
@@ -10,11 +10,11 @@ var alive = true;
 var points = 0;
 
 function setup() {
-   createCanvas(380, 700);
+   createCanvas(windowWidth, windowHeight);
    player = new ObjectInGame(width / 2, height / 2, 0);
-   
+
    gravity = createVector(0, 0.02);
-   
+
    for(var i = 0; i < population; i++) {
       others[i] = new ObjectInGame(random(width), random(height));
    }
@@ -91,10 +91,10 @@ ObjectInGame.prototype.show = function() {
    line(0, 20, 0, 5);
    pop();
 };
-   
+
 ObjectInGame.prototype.move = function() {
    this.vel.add(this.acc);
-   this.pos.add(this.vel);   
+   this.pos.add(this.vel);
    this.acc.mult(0);
 };
 
@@ -122,4 +122,3 @@ ObjectInGame.prototype.hits = function() {
 ObjectInGame.prototype.addForce = function(force) {
    this.acc.add(force);
 };
-
