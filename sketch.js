@@ -27,13 +27,13 @@ function draw() {
       background(0);
    }
 
-   player.move();
+   player.update();
    player.show();
    for(var i = 0; i < population; i++) {
       others[i].addForce(gravity);
       others[i].hits();
       others[i].edges();
-      others[i].move();
+      others[i].update();
       others[i].show();
    }
 
@@ -92,7 +92,7 @@ ObjectInGame.prototype.show = function() {
    pop();
 };
 
-ObjectInGame.prototype.move = function() {
+ObjectInGame.prototype.update = function() {
    this.vel.add(this.acc);
    this.pos.add(this.vel);
    this.acc.mult(0);
