@@ -51,7 +51,7 @@ function mousePressed() {
    var tar = createVector(mouseX, mouseY);
    var loc = player.pos.copy();
    var dir = tar.sub(loc);
-   var force = dir.mult(0.01);
+   var force = dir.mult(0.005);
    player.addForce(force);
 }
 
