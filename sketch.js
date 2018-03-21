@@ -50,16 +50,4 @@ function draw() {
    }
    textSize(20);
    text(points, 20, 40);
-<<<<<<< HEAD
-
-}
-
-function mousePressed() {
-   var tar = createVector(mouseX, mouseY);
-   var loc = player.pos.copy();
-   var dir = tar.sub(loc);
-   var force = dir.mult(0.0005);
-   player.addForce(force);
-=======
->>>>>>> master
 }
