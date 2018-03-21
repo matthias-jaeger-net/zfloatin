@@ -6,5 +6,16 @@ What is this? Version 1.0.0 of a game or just a graphical browser experience?
 https://matthias-jaeger-net.github.io/zfloatin
 
 
-![for_for_for_you](img/front.jpg)
-![for_for_for_you](img/detail.jpg)
+### TO DO
+
+- [x] Create running example page
+- [x] Change file structure
+- [ ] Make physics better
+- [ ] Welcome screen
+- [x] Images in readme
+
+
+### Images
+
+![zfloatin](png/screen-white.png)
+![zfloatin](png/screen-black.png)
